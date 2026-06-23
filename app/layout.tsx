@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "תעודת זהות בנקאית — כך תדעו אם הבנק גובה מכם עמלות",
-  description:
-    "מדריך מהיר ופשוט: כך תוציאו תעודת זהות בנקאית ותבדקו אם הבנק גובה מכם עמלות — ומה לעשות אם כן.",
+  title: "תעודת זהות בנקאית | פשוט להשקיע",
+  description: "כך תוציאו תעודת זהות בנקאית ותבדקו אם הבנק גובה מכם עמלות — ומה לעשות אם כן.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="he" dir="rtl">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+      </head>
       <body>{children}</body>
     </html>
   );
