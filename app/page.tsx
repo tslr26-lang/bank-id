@@ -94,6 +94,16 @@ export default function BankIdPage() {
             </div>
           </div>
 
+          {/* Image after step 1 */}
+          <div className="step-image-wrap reveal">
+            <div className="step-image-label">כך נראה בפועל</div>
+            <img
+              src="/step1-screenshot.png"
+              alt="תעודת זהות בנקאית — דוגמה"
+              className="step-image"
+            />
+          </div>
+
           {/* Step 2 */}
           <div className="content-block reveal reveal-delay">
             <div className="content-eyebrow">צעד 2</div>
@@ -111,6 +121,16 @@ export default function BankIdPage() {
                 הדו&quot;ח ייפתח כמסמך שניתן לקרוא ולשמור.
               </div>
             </div>
+          </div>
+
+          {/* Image after step 2 */}
+          <div className="step-image-wrap reveal">
+            <div className="step-image-label">כך נראה בפועל</div>
+            <img
+              src="/step2-screenshot.png"
+              alt="דו&quot;ח מקוצר — דוגמה"
+              className="step-image"
+            />
           </div>
 
           {/* Hint between steps */}
@@ -142,6 +162,16 @@ export default function BankIdPage() {
             </div>
           </div>
 
+          {/* Image after step 3 */}
+          <div className="step-image-wrap reveal">
+            <div className="step-image-label">כך נראה בפועל</div>
+            <img
+              src="/step3-screenshot.png"
+              alt="סעיף עמלות — דוגמה"
+              className="step-image"
+            />
+          </div>
+
         </div>
       </section>
 
@@ -150,8 +180,14 @@ export default function BankIdPage() {
       {/* ═══ FOOTER ═══ */}
       <footer className="footer">
         <div className="container">
+          <img src="/logo.png" alt="פשוט להשקיע" className="footer-logo" />
           <div className="footer-brand">פשוט להשקיע</div>
           <div className="footer-sub">© תומר אליהו | כל הזכויות שמורות</div>
+          <div className="footer-legal" style={{ marginTop: 8, fontSize: '0.75rem', opacity: 0.7 }}>
+            <a href="https://privacy.tomereliyahu.com" style={{ color: 'inherit' }}>מדיניות פרטיות</a>
+            {' · '}
+            <a href="https://accessibility.tomereliyahu.com" style={{ color: 'inherit' }}>הצהרת נגישות</a>
+          </div>
         </div>
       </footer>
     </>
